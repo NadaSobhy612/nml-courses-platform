@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+  <h1 class="logo"> <i class="fa-solid fa-graduation-cap"></i> NML Courses  </h1>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      
+      <li id="profileNavPlaceholder" style="display: none;">
+        <a href="profile.html" class="profile-link">
+          <span id="navUserName">User Name</span>
+          <img id="navProfilePic" src="image/default-profile.png" alt="Profile" class="nav-profile-pic">
+        </a>
+      </li>
+      
+
+
+      
+      <li><button id="themeToggle" title="Toggle Theme"><i class="fas fa-adjust"></i></button></li>
+    </ul>
+  </nav>
+</div>
+  </header>
+
+  <main>
+    <div id="myProfileSection" class="my-profile-container">
+      <div class="profile-header">
+        <div class="profile-picture-wrapper">
+          <img id="profilePicture" src="image/default-profile.png" alt="Profile Picture">
+          <input type="file" id="uploadProfilePicture" accept="image/*" style="display: none;">
+          <button id="changePictureBtn" class="btn-small">Change Picture</button>
+        </div>
+        <h2 id="profileUserName"></h2>
+        <p>Welcome to your personalized dashboard!</p>
+      </div>
+
+      <div class="profile-content">
+        <h3>My Enrolled Courses</h3>
+        <ul id="enrolledCoursesList" class="enrolled-courses-list">
+         
+        </ul>
+        <a href="courses.html" class="btn">Explore More Courses</a>
+      </div>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content" id="contact">
+      <p>Contact us: info@myacademy.com</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2025 MyAcademy. All rights reserved.</p>
+  </footer>
+
+  <script src="script/scriptlogin.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>

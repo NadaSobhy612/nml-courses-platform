@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+<body>
+  <header class="course-header">
+    <div class="container">
+      <h1 id="courseTitle">Course Title</h1>
+      <h1 class="logo"> <i class="fa-solid fa-graduation-cap"></i> NML Courses  </h1>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li id="loginNav"><a href="login.html#signin">Login</a></li>
+    <li id="signupNav"><a href="login.html#signup">Sign Up</a></li>
+
+    
+      <li id="profileNavPlaceholder" style="display: none;">
+        <a href="profile.html" class="profile-link">
+          <span id="navUserName">User Name</span>
+          <img id="navProfilePic" src="image/default-profile.png" alt="Profile" class="nav-profile-pic">
+        </a>
+      </li>
+
+
+      
+      <li><button id="themeToggle" title="Toggle Theme"><i class="fas fa-adjust"></i></button></li>
+    </ul>
+  </nav>
+    </div>
+  </header>
+
+  <main class="course-detail-container container">
+    <div class="course-media">
+      <div class="course-image-wrapper">
+        <img id="courseImage" src="" alt="Course Image" class="animated-image" style="width: 100%; height: auto;">
+      </div>
+      <div class="course-video-wrapper">
+        <iframe id="courseVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="animated-video" style="display: none; width: 100%; height: 315px;"></iframe>
+        <div id="videoPlaylist" class="video-playlist">
+          
+        </div>
+      </div>
+    </div>
+    <div class="course-info">
+      <p id="courseDescription" class="animated-text"></p>
+      <ul class="course-meta">
+        <li><strong>Duration:</strong> <span id="courseDuration"></span></li>
+        <li><strong>Lectures:</strong> <span id="courseLectures"></span></li>
+        <li><strong>Price:</strong> <span id="coursePrice"></span></li>
+        <li><strong>Payment Method:</strong> <span id="coursePayment"></span></li>
+        <li><strong>Instructor:</strong> <span id="courseInstructor"></span></li>
+      </ul>
+      <button id="enrollCourseBtn" class="btn animated-button">Enroll Now</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content" id="contact">
+      <p>Contact us: info@myacademy.com</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Stay updated with our latest courses!</p>
+        <form>
+          <input type="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p>&copy; 2025 MyAcademy. All rights reserved.</p>
+  </footer>
+
+  <script src="script/coursedetails.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/scriptlogin.js"></script> 
+</body>
+</html>

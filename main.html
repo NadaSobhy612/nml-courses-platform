@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+     <h1 class="logo"> <i class="fa-solid fa-graduation-cap"></i> NML Courses  </h1>
+      
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li id="loginNav"><a href="login.html#signin">Login</a></li>
+    <li id="signupNav"><a href="login.html#signup">Sign Up</a></li>
+
+    
+      <li id="profileNavPlaceholder" style="display: none;">
+        <a href="profile.html" class="profile-link">
+          <span id="navUserName">User Name</span>
+          <img id="navProfilePic" src="image/default-profile.png" alt="Profile" class="nav-profile-pic">
+        </a>
+      </li>
+
+
+      
+      <li><button id="themeToggle" title="Toggle Theme"><i class="fas fa-adjust"></i></button></li>
+    </ul>
+  </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-image">
+      <img src="image/Home.png" alt="Hero Image" />
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Online Learning</h3>
+        <p>Access all courses online from any device</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Top Instructors</h3>
+        <p>Experienced and professional instructors in all fields</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-certificate"></i>
+        <h3>Certified Courses</h3>
+        <p>Get certified after successfully completing a course</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="choose-us-grid">
+        <div class="choose-us-item">
+          <i class="fas fa-globe"></i>
+          <h3>Global Access</h3>
+          <p>Learn from anywhere in the world, at your own pace.</p>
+        </div>
+        <div class="choose-us-item">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is always here to help you.</p>
+        </div>
+        <div class="choose-us-item">
+          <i class="fas fa-handshake"></i>
+          <h3>Career Opportunities</h3>
+          <p>Gain skills that are in high demand in today's job market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-preview">
+    <div class="container">
+      <h2 class="section-title">Featured Courses</h2>
+      <div class="courses-grid">
+        <a href="course-details.html?course=python" class="course-card-link">
+          <div class="course-card">
+            <img src="image/python.jpg" alt="Python Course">
+            <h3>Python for Beginners</h3>
+            <p>Intro to programming using Python</p>
+            <span class="btn">Enroll Now</span>
+          </div>
+        </a>
+        <a href="course-details.html?course=Graphic" class="course-card-link">
+          <div class="course-card">
+            <img src="image/vedio.jpg" alt="Graphic Design">
+            <h3>Graphic Design Mastery</h3>
+            <p>Learn design tools and color theory essentials</p>
+            <span class="btn">Enroll Now</span>
+          </div>
+        </a>
+        <a href="course-details.html?course=Digital" class="course-card-link">
+          <div class="course-card">
+            <img src="image/markting.jpg" alt="Digital Marketing">
+            <h3>Digital Marketing 101</h3>
+            <p>Modern marketing strategies and tactics</p>
+            <span class="btn">Enroll Now</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-content" id="contact">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>Stay updated with our latest courses!</p>
+      <form>
+        <input type="email" placeholder="Your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  
+
+ 
+  <div class="footer-bottom">
+    <p>Contact us: info@myacademy.com</p>
+    <p>&copy; 2025 MyAcademy. All rights reserved.</p>
+  </div>
+</footer>
+ 
+  <script src="script/script.js"></script>
+  <script src="script/scriptlogin.js"></script> 
+</body>
+</html>

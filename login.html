@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MySite - Login</title>
+  <link rel="stylesheet" href="css/stylelogin.css" />
+  <link rel="stylesheet" href="css/style.css" /> 
+</head>
+<body>
+  
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form id="signUpForm" >
+        <h1>Create Account</h1>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form id="signInForm">
+        <h1>Sign in</h1>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="myProfileSection" class="my-profile-container" style="display: none;">
+    <div class="profile-header">
+      <div class="profile-picture-wrapper">
+        <img id="profilePicture" src="image/default-profile.png" alt="Profile Picture">
+        <input type="file" id="uploadProfilePicture" accept="image/*" style="display: none;">
+        <button id="changePictureBtn" class="btn-small">Change Picture</button>
+      </div>
+      <h2 id="profileUserName"></h2>
+      <p>Welcome to your personalized dashboard!</p>
+    </div>
+
+    <div class="profile-content">
+      <h3>My Enrolled Courses</h3>
+      <ul id="enrolledCoursesList" class="enrolled-courses-list">
+       
+      </ul>
+      <a href="courses.html" class="btn">Explore More Courses</a>
+    </div>
+    <button id="logoutBtn" class="btn-logout">Logout</button>
+  </div>
+
+  <script src="script/scriptlogin.js"></script>
+</body>
+</html>
